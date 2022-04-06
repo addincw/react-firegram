@@ -1,10 +1,21 @@
-import React from 'react';
-import Title from './comps/Title';
+import React, { useState } from 'react';
+import Title from './components/Title';
+import FormUpload from './components/FormUpload';
+import ImageGrid from './components/ImageGrid';
+import ImageModal from './components/ImageModal';
 
 function App() {
+  const [selectedImage, setSelectedImage] = useState('');
+
   return (
     <div className="App">
-      <Title/>
+      <Title />
+
+      <FormUpload />
+
+      <ImageGrid setSelectedImage={setSelectedImage} />
+
+      {selectedImage && <ImageModal selectedImage={selectedImage} setSelectedImage={setSelectedImage} />}
     </div>
   );
 }

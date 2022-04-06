@@ -1,0 +1,21 @@
+untuk pakai firebase harus buat project baru terlebih dahulu
+console.firebase.google.com
+1. console.firebase.google.com
+2. create project
+3. register new app pilih icon <>
+4. create database > test mode > start collection
+5. storage > get started > next > rules > remove authenticated check
+
+//aplikasi
+4. copy script dan paste di project kita (cth: config.js)
+5. install package firebase (npm i firebase)
+6. import * as firebase from firebase/app di file yang sama dengan script yang di copy
+7. import firebase/storage
+8. import firebase/firestore
+9. invoke firebase.storage(), firebase.firestore()
+10. export
+
+npm i framer-motion (untuk memberikan animasi pada component)
+import { motion } from framer-motion
+
+Build a Photo Gallery With React & Firebase: https://www.youtube.com/watch?v=vUe91uOx7R0&list=PLYjQ_F91Hq2U7WpmJb0L61YiwX0l4n2dh&index=5&t=2056s
